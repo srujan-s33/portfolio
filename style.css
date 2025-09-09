@@ -1109,59 +1109,6 @@ body {
   }
 }
 
-/* High contrast mode for accessibility */
-@media (prefers-contrast: high) {
-  :root {
-    --neon-cyan: #ffffff;
-    --neon-magenta: #ffffff;
-    --text-primary: #ffffff;
-    --glow-cyan: none;
-    --glow-magenta: none;
-  }
-}
-
-/* Reduced motion for users who prefer it */
-@media (prefers-reduced-motion: reduce) {
-  .typing-text {
-    animation: none;
-    width: 100%;
-  }
-  
-  .cursor {
-    animation: none;
-    opacity: 1;
-  }
-  
-  .tagline,
-  .terminal-info {
-    animation: none;
-    opacity: 1;
-  }
-  
-  .system-text {
-    animation: none;
-    opacity: 0.7;
-  }
-  
-  .particle, .scanlines, .grid-background,
-  .floating-hex, .skill-card::before,
-  .floating-circuit, .flip-card-inner {
-    animation: none;
-  }
-  
-  .skill-card:hover {
-    transform: scale(1.02);
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg) scale(1.02);
-  }
-  
-  .neon-button:hover {
-    transform: scale(1.05);
-  }
-}
-
 /* Contact Section */
 .contact-section {
   min-height: 100vh;
